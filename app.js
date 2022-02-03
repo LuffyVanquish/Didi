@@ -39,13 +39,14 @@ client.on("message", message => {
     if (message.content === "*jc") {
         message.delete()
         i = randInt(mots.length);
+        randomColor = Math.floor(Math.random()*16777215).toString(16);
         msg = "**Lave toi "+mots[i].trim()+" toi !**";
 
         message.channel.send({
             embeds: [{
               title: '__Insulte de JC__',
               description: msg,
-              color: RANDOM,
+              color: randomColor,
 
              footer: {
                     text: `JC ` + d.toLocaleString() 
