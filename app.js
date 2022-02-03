@@ -13,7 +13,7 @@ const client = new Discord.Client({
 
 
 client.once('ready', () => {
-    console.log('Félicitations, votre bot Discord a été correctement initialisé !');
+    console.log('Ready!');
 
 
         fs.readFile('./Dico/AnaWord.txt', 'utf8' , (err, data) => {
@@ -22,8 +22,6 @@ client.once('ready', () => {
                 return
             }
             mots = data.split(",");
-            console.log(mots)
-
             })
 
 });
