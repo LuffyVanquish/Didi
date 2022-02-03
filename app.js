@@ -37,7 +37,7 @@ function randInt(max) {
 client.on("message", message => {
 
     if (message.content === "*jc") {
-        message.delete()
+        message.delete(1000)
         i = randInt(mots.length);
         randomColor = Math.floor(Math.random()*16777215).toString(16);
         msg = "**Lave toi "+mots[i].trim()+" toi !**";
@@ -56,7 +56,7 @@ client.on("message", message => {
     }
 
     if (message.content === "*piece") {
-        message.delete()
+        message.delete(1000)
         i = randInt(2);
         msg = ["Pile !" , "Face !"];
 
