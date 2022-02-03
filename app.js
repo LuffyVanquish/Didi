@@ -45,7 +45,7 @@ client.on("message", message => {
             embeds: [{
               title: '__Insulte de JC__',
               description: msg,
-              color: 0x00FFFF,
+              color: RANDOM,
 
              footer: {
                     text: `JC ` + d.toLocaleString() 
